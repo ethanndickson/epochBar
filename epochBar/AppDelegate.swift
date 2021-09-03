@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  timeBar
+//  epochBar
 //
 //  Created by Ethan Dickson on 3/9/21.
 //
@@ -16,7 +16,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         statusItem.button?.title = "epch" // Set the menu bar title
         statusItem.button?.target = self // Make sure the button press is sent to us
-        statusItem.button?.action = #selector(showEpochBar) // on press, run a  function that creates a popover
+        statusItem.button?.action = #selector(showEpochBar) // on press, run a function that creates a popover
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
