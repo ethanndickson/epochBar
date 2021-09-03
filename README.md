@@ -1,5 +1,5 @@
 # epochBar
-Super simple macOS menu bar app for dealing with Unix Timestamps in spreadsheets, log files, etc.
+Super simple macOS menu bar app for converting to and from Unix Timestamps.
 
 Download in [Releases](https://github.com/ethanndickson/epochBar/releases/)
 # Features
