@@ -14,13 +14,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA0593B326E22CFE00479EB3 /* epochBar.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = epochBar.entitlements; sourceTree = "<group>"; };
 		AA35025B26E1FA6B00A3E153 /* epochBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = epochBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA35025E26E1FA6B00A3E153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA35026026E1FA6B00A3E153 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA35026226E1FA6C00A3E153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA35026526E1FA6C00A3E153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA35026726E1FA6C00A3E153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA35026826E1FA6C00A3E153 /* timeBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = timeBar.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 		AA35025226E1FA6B00A3E153 = {
 			isa = PBXGroup;
 			children = (
-				AA35025D26E1FA6B00A3E153 /* timeBar */,
+				AA35025D26E1FA6B00A3E153 /* epochBar */,
 				AA35025C26E1FA6B00A3E153 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,7 +50,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AA35025D26E1FA6B00A3E153 /* timeBar */ = {
+		AA35025D26E1FA6B00A3E153 /* epochBar */ = {
 			isa = PBXGroup;
 			children = (
 				AA35025E26E1FA6B00A3E153 /* AppDelegate.swift */,
@@ -58,9 +58,9 @@
 				AA35026226E1FA6C00A3E153 /* Assets.xcassets */,
 				AA35026426E1FA6C00A3E153 /* Main.storyboard */,
 				AA35026726E1FA6C00A3E153 /* Info.plist */,
-				AA35026826E1FA6C00A3E153 /* timeBar.entitlements */,
+				AA0593B326E22CFE00479EB3 /* epochBar.entitlements */,
 			);
-			path = timeBar;
+			path = epochBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,15 +271,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = timeBar/timeBar.entitlements;
+				CODE_SIGN_ENTITLEMENTS = epochBar/epochBar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = timeBar/Info.plist;
+				INFOPLIST_FILE = epochBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ethanndickson.timeBar;
+				PRODUCT_BUNDLE_IDENTIFIER = ethanndickson.epochBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -290,15 +290,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = timeBar/timeBar.entitlements;
+				CODE_SIGN_ENTITLEMENTS = epochBar/epochBar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = timeBar/Info.plist;
+				INFOPLIST_FILE = epochBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ethanndickson.timeBar;
+				PRODUCT_BUNDLE_IDENTIFIER = ethanndickson.epochBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
