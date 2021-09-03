@@ -23,6 +23,9 @@ class ViewController: NSViewController{
         }
     }
 
+    @IBAction func closeProgram(_ sender: Any) {
+        exit(0)
+    }
     @IBAction func copyToClipboard(_ sender: Any) {
         let currentDate = Date()
         humanTime.dateValue = currentDate // we do this so the datepicker updates visually
