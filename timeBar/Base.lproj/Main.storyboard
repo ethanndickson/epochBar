@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -10,11 +11,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="timeBar" id="1Xt-HY-uBw">
+                            <menuItem title="epochBar" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="timeBar" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="epochBar" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About timeBar" id="5kV-Vb-QxS">
+                                        <menuItem title="About epochBar" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -28,7 +29,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide timeBar" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide epochBar" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -46,7 +47,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit timeBar" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit epochBar" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -659,7 +660,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="timeBar Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="epochBar Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -673,45 +674,115 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="epochBar" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Window Controller-->
-        <scene sceneID="R2V-B0-nI4">
-            <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <connections>
-                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
-                        </connections>
-                    </window>
-                    <connections>
-                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
-                    </connections>
-                </windowController>
-                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="75" y="250"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="XfG-lQ-9wD" customClass="ViewController" customModule="epochBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="258" height="138"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PuD-L1-3oD">
+                                <rect key="frame" x="68" y="70" width="123" height="21"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="j6N-Im-Ttj">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="onUnixTimeChange:" target="XfG-lQ-9wD" id="Qlt-iN-8or"/>
+                                </connections>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MAv-h1-Bzl">
+                                <rect key="frame" x="17" y="73" width="47" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="UnixTS" id="slc-gp-8qV">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cdt-SI-h86">
+                                <rect key="frame" x="17" y="105" width="33" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Date" id="a2g-gT-0yQ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="i07-07-8ua">
+                                <rect key="frame" x="68" y="101" width="183" height="28"/>
+                                <datePickerCell key="cell" borderStyle="bezel" alignment="left" useCurrentDate="YES" id="t5T-8K-NAG">
+                                    <font key="font" metaFont="system"/>
+                                    <date key="date" timeIntervalSinceReferenceDate="652346576.64777005">
+                                        <!--2021-09-03 07:22:56 +0000-->
+                                    </date>
+                                    <date key="maxDate" timeIntervalSinceReferenceDate="1169136847">
+                                        <!--2038-01-18 16:14:07 +0000-->
+                                    </date>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <datePickerElements key="datePickerElements" year="YES" month="YES" day="YES" hour="YES" minute="YES" second="YES"/>
+                                </datePickerCell>
+                                <connections>
+                                    <action selector="onDatePickerChange:" target="XfG-lQ-9wD" id="dLt-a4-yQq"/>
+                                </connections>
+                            </datePicker>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FCj-N3-tqy">
+                                <rect key="frame" x="37" y="24" width="184" height="32"/>
+                                <buttonCell key="cell" type="push" title="Set Time To Now &amp; Copy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Sbk-IE-Rvb">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="copyToClipboard:" target="XfG-lQ-9wD" id="cA6-rU-mzd"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="J2M-PH-zus">
+                                <rect key="frame" x="192" y="63" width="66" height="32"/>
+                                <buttonCell key="cell" type="push" title="Copy" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vda-QB-bzu">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="copyAnyToClipboard:" target="XfG-lQ-9wD" id="2FJ-wh-dU9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="MAv-h1-Bzl" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="19" id="9l3-R2-tsb"/>
+                            <constraint firstItem="J2M-PH-zus" firstAttribute="firstBaseline" secondItem="MAv-h1-Bzl" secondAttribute="firstBaseline" id="AEq-Sb-zhu"/>
+                            <constraint firstAttribute="trailing" secondItem="PuD-L1-3oD" secondAttribute="trailing" constant="67" id="BXj-wd-kbw"/>
+                            <constraint firstItem="Cdt-SI-h86" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="19" id="Fo3-ZX-YKU"/>
+                            <constraint firstItem="PuD-L1-3oD" firstAttribute="firstBaseline" secondItem="MAv-h1-Bzl" secondAttribute="firstBaseline" id="Ktu-eH-c0v"/>
+                            <constraint firstItem="PuD-L1-3oD" firstAttribute="firstBaseline" secondItem="MAv-h1-Bzl" secondAttribute="firstBaseline" id="Mvz-cS-EYP"/>
+                            <constraint firstItem="FCj-N3-tqy" firstAttribute="height" secondItem="m2S-Jp-Qdl" secondAttribute="height" multiplier="0.144928" id="ON0-bY-QoC"/>
+                            <constraint firstItem="FCj-N3-tqy" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="QfU-m3-rDA"/>
+                            <constraint firstItem="i07-07-8ua" firstAttribute="firstBaseline" secondItem="Cdt-SI-h86" secondAttribute="firstBaseline" id="SV0-AJ-7yU"/>
+                            <constraint firstItem="FCj-N3-tqy" firstAttribute="top" secondItem="PuD-L1-3oD" secondAttribute="bottom" constant="19" id="WYm-Dl-fJD"/>
+                            <constraint firstItem="PuD-L1-3oD" firstAttribute="leading" secondItem="MAv-h1-Bzl" secondAttribute="trailing" constant="6" id="ZJk-vd-FEK"/>
+                            <constraint firstItem="J2M-PH-zus" firstAttribute="leading" secondItem="PuD-L1-3oD" secondAttribute="trailing" constant="8" symbolic="YES" id="b4B-qR-thF"/>
+                            <constraint firstAttribute="trailing" secondItem="J2M-PH-zus" secondAttribute="trailing" constant="7" id="euV-KB-HPp"/>
+                            <constraint firstItem="i07-07-8ua" firstAttribute="leading" secondItem="Cdt-SI-h86" secondAttribute="trailing" constant="20" id="hnU-si-Grp"/>
+                            <constraint firstItem="FCj-N3-tqy" firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="width" multiplier="0.658915" id="jif-qI-TYJ"/>
+                            <constraint firstAttribute="trailing" secondItem="i07-07-8ua" secondAttribute="trailing" constant="10" id="kTU-jf-wkf"/>
+                            <constraint firstItem="Cdt-SI-h86" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="17" id="uCW-Cx-HSa"/>
+                            <constraint firstItem="MAv-h1-Bzl" firstAttribute="top" secondItem="Cdt-SI-h86" secondAttribute="bottom" constant="16" id="wea-9l-tMv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="humanTime" destination="i07-07-8ua" id="GcQ-gI-fpE"/>
+                        <outlet property="unixTime" destination="PuD-L1-3oD" id="8Zb-fO-VZF"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="-36" y="589"/>
         </scene>
     </scenes>
 </document>

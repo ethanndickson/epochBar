@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AA35025B26E1FA6B00A3E153 /* timeBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timeBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA35025B26E1FA6B00A3E153 /* epochBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = epochBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA35025E26E1FA6B00A3E153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA35026026E1FA6B00A3E153 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA35026226E1FA6C00A3E153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		AA35025C26E1FA6B00A3E153 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA35025B26E1FA6B00A3E153 /* timeBar.app */,
+				AA35025B26E1FA6B00A3E153 /* epochBar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,9 +66,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AA35025A26E1FA6B00A3E153 /* timeBar */ = {
+		AA35025A26E1FA6B00A3E153 /* epochBar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA35026B26E1FA6C00A3E153 /* Build configuration list for PBXNativeTarget "timeBar" */;
+			buildConfigurationList = AA35026B26E1FA6C00A3E153 /* Build configuration list for PBXNativeTarget "epochBar" */;
 			buildPhases = (
 				AA35025726E1FA6B00A3E153 /* Sources */,
 				AA35025826E1FA6B00A3E153 /* Frameworks */,
@@ -78,9 +78,9 @@
 			);
 			dependencies = (
 			);
-			name = timeBar;
+			name = epochBar;
 			productName = timeBar;
-			productReference = AA35025B26E1FA6B00A3E153 /* timeBar.app */;
+			productReference = AA35025B26E1FA6B00A3E153 /* epochBar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +97,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AA35025626E1FA6B00A3E153 /* Build configuration list for PBXProject "timeBar" */;
+			buildConfigurationList = AA35025626E1FA6B00A3E153 /* Build configuration list for PBXProject "epochBar" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,7 +110,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AA35025A26E1FA6B00A3E153 /* timeBar */,
+				AA35025A26E1FA6B00A3E153 /* epochBar */,
 			);
 		};
 /* End PBXProject section */
@@ -307,7 +307,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AA35025626E1FA6B00A3E153 /* Build configuration list for PBXProject "timeBar" */ = {
+		AA35025626E1FA6B00A3E153 /* Build configuration list for PBXProject "epochBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA35026926E1FA6C00A3E153 /* Debug */,
@@ -316,7 +316,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA35026B26E1FA6C00A3E153 /* Build configuration list for PBXNativeTarget "timeBar" */ = {
+		AA35026B26E1FA6C00A3E153 /* Build configuration list for PBXNativeTarget "epochBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AA35026C26E1FA6C00A3E153 /* Debug */,
